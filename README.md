@@ -54,20 +54,23 @@ Figure -02 HALF Subtractor
 
 Developed by:Divyadharshini.A
 RegisterNumber:212222240027
-
+```python
 module half_adder(a,b,sum,carry);
 input a,b;
 output sum,carry; 
 assign sum = a^b;
 assign carry = a & b;
 endmodule
+```
 
+```python
 module halfsub_top(a,b,D,Bo);
 input a,b;
 output D,Bo; // Outputs sum and carry for half adder:Outputs difference D,Borrow Bo for half subtractor
 assign D = a ^ b;
   assign Bo = ~a & b;
 endmodule
+```
 **RTL Schematic**
 
 ![image](https://github.com/divyadharshiniddanbarasu/HALF_ADDER_SUBTRACTOR/assets/119393424/266f80fa-f42e-4d66-8000-7ccfcbbc4665)
